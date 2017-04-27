@@ -75,7 +75,6 @@ public class home extends javax.swing.JFrame {
         kode = new javax.swing.JTextField();
         nama = new javax.swing.JTextField();
         cbJenis = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         cbKategori = new javax.swing.JComboBox<>();
         panel1 = new java.awt.Panel();
@@ -90,6 +89,8 @@ public class home extends javax.swing.JFrame {
         panel2 = new java.awt.Panel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblData = new javax.swing.JTable();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -113,23 +114,23 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(admin);
         admin.setBounds(110, 10, 110, 30);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
         jPanel1.setLayout(null);
 
         lbltanggal.setBackground(new java.awt.Color(255, 255, 255));
         lbltanggal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jPanel1.add(lbltanggal);
-        lbltanggal.setBounds(520, 10, 100, 30);
+        lbltanggal.setBounds(490, 10, 100, 30);
 
         lblJam.setBackground(new java.awt.Color(255, 255, 255));
         lblJam.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jPanel1.add(lblJam);
-        lblJam.setBounds(640, 10, 100, 30);
+        lblJam.setBounds(610, 10, 100, 30);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 810, 70);
+        jPanel1.setBounds(0, 0, 730, 70);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setLayout(null);
 
         jLabel6.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
@@ -170,27 +171,22 @@ public class home extends javax.swing.JFrame {
         nama.setBounds(170, 130, 300, 24);
 
         cbJenis.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
-        cbJenis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Pack--" }));
+        cbJenis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pack" }));
         jPanel2.add(cbJenis);
         cbJenis.setBounds(170, 210, 300, 24);
 
-        jLabel1.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
-        jLabel1.setText("Pencarian Berdasarkan Kategori Makanan");
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(10, 330, 300, 18);
-
-        jPanel3.setBackground(new java.awt.Color(255, 204, 204));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 255));
         jPanel3.setLayout(null);
 
         cbKategori.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
-        cbKategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Makanan--" }));
+        cbKategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Barang Lain" }));
         jPanel3.add(cbKategori);
         cbKategori.setBounds(160, 90, 300, 24);
 
         jPanel2.add(jPanel3);
         jPanel3.setBounds(10, 80, 560, 220);
 
-        panel1.setBackground(new java.awt.Color(255, 204, 204));
+        panel1.setBackground(new java.awt.Color(204, 204, 255));
         panel1.setLayout(null);
 
         edit.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
@@ -266,7 +262,7 @@ public class home extends javax.swing.JFrame {
         jPanel2.add(cari);
         cari.setBounds(470, 320, 90, 27);
 
-        panel2.setBackground(new java.awt.Color(255, 204, 204));
+        panel2.setBackground(new java.awt.Color(204, 204, 255));
 
         tblData.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -291,10 +287,21 @@ public class home extends javax.swing.JFrame {
         jPanel2.add(panel2);
         panel2.setBounds(10, 360, 560, 140);
 
+        jPanel4.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel4.setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
+        jLabel1.setText("Pencarian Berdasarkan Kategori Makanan");
+        jPanel4.add(jLabel1);
+        jLabel1.setBounds(0, 10, 300, 18);
+
+        jPanel2.add(jPanel4);
+        jPanel4.setBounds(10, 310, 560, 40);
+
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 730, 510);
 
-        setSize(new java.awt.Dimension(761, 541));
+        setSize(new java.awt.Dimension(746, 541));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -400,6 +407,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField kode;
     private javax.swing.JLabel lblJam;
